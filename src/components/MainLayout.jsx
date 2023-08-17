@@ -1,21 +1,10 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import { Outlet } from 'react-router-dom';
-import Header from './Header';
 import Footer from './Footer';
+import Header from './Header';
 
 const MainLayout = () => {
   const videoRef = useRef();
-
-  const [showLoader, setShowLoader] = useState(false);
-  const [showLoader1, setShowLoader1] = useState(false);
-
-  // console.log(searchParams.set('mode', 'dev'));
-
-  useEffect(() => {
-    if (window.location.search === '?mode=dev') {
-      setShowLoader(true);
-    }
-  }, []);
 
   return (
     <div className="App">
