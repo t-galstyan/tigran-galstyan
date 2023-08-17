@@ -18,6 +18,18 @@ body,
   width: 100%;
 }
 
+video {
+  pointer-events: none;
+}
+
+video::-webkit-media-controls {
+  display: none;
+}
+
+video::-webkit-media-controls-start-playback-button {
+  display: none;
+}
+
 .video-bg {
   position: fixed;
   z-index: -1;

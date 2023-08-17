@@ -7,7 +7,7 @@ const MainLayout = () => {
   return (
     <div className="App">
       <div className="main-layout">
-        <video className="video-bg" autoPlay muted loop>
+        <video className="video-bg" autoPlay muted loop controls={false}>
           <source src={require('../assets/video/bg.mp4')} type="video/mp4" />
         </video>
         <Header />
