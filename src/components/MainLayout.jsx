@@ -23,7 +23,7 @@ const MainLayout = () => {
   return (
     <div className="App">
       <div className="main-layout">
-        <video ref={videoRef} className="video-bg" autoPlay muted loop>
+        <video ref={videoRef} className="video-bg" playsInline={true} autoPlay={true} loop={true} muted={true}>
           <source src={require('../assets/video/bg.mp4')} type="video/mp4" />
         </video>
         <Header />
