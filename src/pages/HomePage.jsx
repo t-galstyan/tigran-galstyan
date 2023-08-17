@@ -17,7 +17,7 @@ const HomePage = () => {
             IN MAN
           </h1>
           <p className="desc">
-            This book is Tigran Galstyan"s copyrighted work on the connection between different branches of science, the
+            This book is Tigran Galstyan's copyrighted work on the connection between different branches of science, the
             psychophysical structure of man, the Creation, and the interconnectedness of the world and the Universe with
             man. The book includes fundamental scientific research, arguments and valid observations.
             <br /> The book consists of five main chapters, tables and a short essay.
