@@ -26,24 +26,38 @@ code {
   bottom: 0;
   left: 0;
   right: 0;
-  background: radial-gradient(circle at 50%, transparent 1%, black 50%);
+  background: radial-gradient(circle at 50%, transparent 1%, black 70%);
 }
 
 .galaxy-image {
-  width: 140%;
-  height: 130%;
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
   background: url(http://cdn.spacetelescope.org/archives/images/screen/heic0602a.jpg) center no-repeat, transparent;
   background-size: contain;
-  opacity: 0.8;
+  opacity: 0.6;
   color: white;
   animation: rotateGalaxy 240s linear infinite;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 600px) {
+  .galaxy-gradient {
+    background: radial-gradient(circle at 50%, transparent 1%, black 99%);
+  }
+  .galaxy-image {
+    width: 200vw;
+    height: 200vw;
+  }
 }
 
 @keyframes rotateGalaxy {
   from {
-    transform: rotate(0);
+    transform: translate(-50%, -50%) rotate(0);
   }
   to {
-    transform: rotate(-360deg);
+    transform: translate(-50%, -50%) rotate(-360deg);
   }
 }
