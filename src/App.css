@@ -18,13 +18,13 @@ body,
   width: 100%;
 }
 
-video {
+/* video {
   pointer-events: none;
 }
 
 video::-webkit-media-controls {
   display: none;
-}
+} */
 
 .video-bg {
   position: fixed;
