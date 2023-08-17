@@ -17,6 +17,9 @@ body,
 .App {
   width: 100%;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /* video {
   pointer-events: none;

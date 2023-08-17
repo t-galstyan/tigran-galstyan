@@ -5,6 +5,7 @@ import AboutMePage from './pages/AboutMePage';
 import ContactsPage from './pages/ContactsPage';
 import './App.css';
 import BooksPage from './pages/BooksPage';
+import { ScrollToTop } from './components/hoc/ScrollToTop';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
         </Route>
       </Routes>
+      <ScrollToTop />
     </BrowserRouter>
   );
 }
