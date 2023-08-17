@@ -1,6 +1,7 @@
 import React from 'react';
 import Notes from '../components/Notes';
 import Slider from '../components/Slider';
+import NefSi from '../components/NefSi';
 
 const HomePage = () => {
   return (
@@ -43,22 +44,10 @@ const HomePage = () => {
         <div className="container">
           <h5 className="title">Special Pictures</h5>
           <Slider />
-
-          <p className="title">scientific work, science fiction Nef-Si</p>
-          <p className="desc">
-            The essence of Life is the diversity of Existence in Reality. And this choice is carried out by any
-            Substantia in their own created "World" or Reality. But Substantia is the eternity, infiniteness in the
-            Emptiness: revelation, revelation, revelation… Once in my past I appeared in the middle of this peculiar
-            "revelation" and "Reality". I was standing in front of the "Light". In my world it was a phenomenon upon
-            which no one ever deliberated. It was there, it was an existence independent of us and inside us. It was our
-            friend but sometimes also our unwanted visitor which no one saw, heard and moreover spoke to. And, thus,
-            with the help of a female guide, all of a sudden, I appeared before this "Light". And, imagine, it turned
-            into a peculiar mirror, into a superdense and surprisingly viscous substance. I couldn"t resist the
-            temptation and unconsciously tried to touch it, feel it, penetrate "it" and, finally, found myself in an
-            emptiness.
-          </p>
         </div>
       </section>
+
+      <NefSi />
     </div>
   );
 };
