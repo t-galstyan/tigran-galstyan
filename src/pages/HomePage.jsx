@@ -2,6 +2,8 @@ import React from 'react';
 import Notes from '../components/Notes';
 import Slider from '../components/Slider';
 import NefSi from '../components/NefSi';
+import PlanetIcon from '../components/icons/PlanetIcon';
+// import { ReactSVG } from 'react-svg';
 
 const HomePage = () => {
   return (
@@ -27,16 +29,20 @@ const HomePage = () => {
       <section className="about-me">
         <div className="container">
           <div className="text-container">
-            <h2 className="section-title">
-              About Me
-              <span className="underline" />
-            </h2>
+            <div className="section-title-wrapper">
+              <h2 className="section-title">About Me</h2>
+
+              <PlanetIcon />
+            </div>
+
             <h3 className="name">Tigran Galstyan</h3>
             <p>1994-1995 - Moscow Academy of Alternative Medicine after Fedorenko, Alternative practitioner</p>
             <p>1989-1993 - Armenian State Institute of Physical Culture, Department of Chess, Coach-educator</p>
             <p>1979-1989 - Secondary School N. 148, Yerevan</p>
           </div>
-          <img src={require('../assets/images/profile.png')} alt="Tigran Galstyan" className="profile-pic" />
+          <div className="profile-pic">
+            <img src={require('../assets/images/profile2.png')} alt="Tigran Galstyan" />
+          </div>
         </div>
       </section>
       <Notes />

@@ -155,6 +155,74 @@ header .social-links {
   align-items: center;
   gap: 14px;
 }
+header .logo {
+  padding: 12px 48px;
+  margin-left: -48px;
+  color: #825600;
+  background: linear-gradient(to right, #825600 0, #fff 10%, #825600 20%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 600;
+  font-size: 24px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+header .logo:hover {
+  background: linear-gradient(to right, #6e6e6e 0, #fff 10%, #6e6e6e 20%);
+  color: #fff;
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@-moz-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 280px;
+  }
+  100% {
+    background-position: 280px;
+  }
+}
+@-webkit-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 280px;
+  }
+  100% {
+    background-position: 280px;
+  }
+}
+@-o-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 280px;
+  }
+  100% {
+    background-position: 280px;
+  }
+}
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 280px;
+  }
+  100% {
+    background-position: 280px;
+  }
+}
 
 .hero {
   display: flex;
@@ -191,11 +259,28 @@ header .social-links {
 
 section.about-me {
   width: 100%;
-  background-color: #fff;
+  /* background-color: #fff; */
   padding-top: 48px;
   padding-bottom: 48px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  position: relative;
+}
 
-  /* backdrop-filter: blur(10px); */
+section.about-me::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background: #fff;
+  z-index: -1;
+  clip-path: polygon(25% 0%, 100% 0, 100% 100%, 0% 100%);
 }
 
 section.about-me .container {
@@ -203,23 +288,21 @@ section.about-me .container {
   justify-content: space-between;
   gap: 24px;
 }
+section.about-me .section-title-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+  margin-top: -18px;
+}
 
 section.about-me .section-title {
   position: relative;
   display: flex;
-  margin-left: 50px;
   font-size: 24px;
   width: fit-content;
-  margin-bottom: 32px;
-  margin-top: 24px;
-}
-section.about-me .section-title .underline {
-  position: absolute;
-  border-bottom: 1px solid #000;
-  width: 60%;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  text-transform: uppercase;
+  margin-right: 12px;
+  margin-top: 8px;
 }
 
 section.about-me .name {
@@ -242,10 +325,13 @@ section.about-me .text-container p {
 
 section.about-me .profile-pic {
   width: 100%;
-  max-width: 360px;
-  object-fit: contain;
+  max-width: 320px;
 }
 
+section.about-me .profile-pic img {
+  width: 100%;
+  object-fit: contain;
+}
 .notes {
   color: #fff;
   margin: 0 auto;
@@ -638,23 +724,40 @@ h1.title {
   }
   section.about-me {
     padding-top: 32px;
-    padding-bottom: 32px;
+    padding-bottom: 0;
   }
   section.about-me .container {
     flex-direction: column;
     justify-content: center;
+    padding: 0;
   }
   section.about-me .text-container {
     width: 100%;
   }
-  section.about-me .section-title {
-    margin: 0 auto 32px;
+  section.about-me .section-title-wrapper {
+    /* margin: 0 auto 32px; */
+    width: 100%;
+    justify-content: center;
   }
   section.about-me .name {
     font-size: 20px;
   }
   section.about-me .profile-pic {
+    width: 100%;
+    max-width: 100%;
+    background-color: #fff;
+  }
+  section.about-me .profile-pic img {
+    max-width: 250px;
+    display: block;
     margin: 0 auto;
+  }
+
+  section.about-me .text-container {
+    padding: 18px 24px;
+  }
+  section.about-me::after {
+    display: none;
   }
   .note-text {
     height: 60px;
