@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import FbIcon from './icons/FbIcon';
 import InstaIcon from './icons/InstaIcon';
+import TelegramIcon from './icons/TelegramIcon';
 
 const Footer = () => {
   return (
@@ -32,8 +33,8 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="#">
-                <InstaIcon />
+              <a href="https://t.me/TigranGalstyan2023" target="_blank" rel="noreferrer">
+                <TelegramIcon />
               </a>
             </li>
           </ul>

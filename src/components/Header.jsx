@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import FbIcon from './icons/FbIcon';
 import InstaIcon from './icons/InstaIcon';
+import TelegramIcon from './icons/TelegramIcon';
 
 const Header = () => {
   const [isOpened, setIsOpened] = useState(false);
@@ -42,8 +43,8 @@ const Header = () => {
               <a href="https://www.facebook.com/tigran.galstyan.357?mibextid=b06tZ0" target="_blank" rel="noreferrer">
                 <FbIcon />
               </a>
-              <a href="#" target="_blank" rel="noreferrer">
-                <InstaIcon />
+              <a href="https://t.me/TigranGalstyan2023" target="_blank" rel="noreferrer">
+                <TelegramIcon />
               </a>
             </li>
           </ul>
