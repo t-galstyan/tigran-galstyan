@@ -33,7 +33,7 @@ code {
   position: absolute;
   width: 100vw;
   height: 100vw;
-  background: url(http://cdn.spacetelescope.org/archives/images/screen/heic0602a.jpg) center no-repeat, transparent;
+  background: url(../src/assets/images/main-bg.jpg) center no-repeat, transparent;
   background-size: contain;
   opacity: 0.6;
   color: white;
