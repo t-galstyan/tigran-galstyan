@@ -27,7 +27,7 @@ const Footer = () => {
           </ul>
           <ul className="links">
             <li>
-              <a href="#">
+              <a href="https://www.facebook.com/tigran.galstyan.357?mibextid=b06tZ0" target="_blank" rel="noreferrer">
                 <FbIcon />
               </a>
             </li>

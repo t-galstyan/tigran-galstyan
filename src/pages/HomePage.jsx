@@ -3,7 +3,6 @@ import Notes from '../components/Notes';
 import Slider from '../components/Slider';
 import NefSi from '../components/NefSi';
 import PlanetIcon from '../components/icons/PlanetIcon';
-// import { ReactSVG } from 'react-svg';
 
 const HomePage = () => {
   return (
@@ -48,7 +47,10 @@ const HomePage = () => {
       <Notes />
       <section className="special-pictures">
         <div className="container">
-          <h5 className="title">Special Pictures</h5>
+          <div className="title-wrapper">
+            <h5 className="title">Special Pictures</h5>
+            <PlanetIcon fill="#000" />
+          </div>
           <Slider />
         </div>
       </section>

@@ -20,7 +20,8 @@ const NefSi = () => {
 
   return (
     <section className="nef-si container">
-      <p className="title">Scientific work, science fiction Nef-Si</p>
+      <p className="title">Scientific work, science fiction essay Nef-Si</p>
+
       <div className={`collapse ${isOpened ? 'open' : ''}`}>
         <p className="desc" ref={paragraph} style={{ height: height }}>
           The essence of Life is the diversity of Existence in Reality. And this choice is carried out by any Substantia

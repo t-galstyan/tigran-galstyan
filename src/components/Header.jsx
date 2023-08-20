@@ -39,10 +39,10 @@ const Header = () => {
               </Link>
             </li>
             <li className="social-links">
-              <a href="#">
+              <a href="https://www.facebook.com/tigran.galstyan.357?mibextid=b06tZ0" target="_blank" rel="noreferrer">
                 <FbIcon />
               </a>
-              <a href="#">
+              <a href="#" target="_blank" rel="noreferrer">
                 <InstaIcon />
               </a>
             </li>

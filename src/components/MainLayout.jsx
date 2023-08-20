@@ -22,9 +22,9 @@ const MainLayout = () => {
           <source src={require('../assets/video/bg.mp4')} type="video/mp4" />
         </video> */}
 
-        <div class="galaxy-wrapper">
-          <div class="galaxy-image"></div>
-          <div class="galaxy-gradient"></div>
+        <div className="galaxy-wrapper">
+          <div className="galaxy-image"></div>
+          <div className="galaxy-gradient"></div>
         </div>
 
         <Header />
