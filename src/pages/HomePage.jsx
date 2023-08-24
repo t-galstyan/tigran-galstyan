@@ -7,6 +7,11 @@ import PlanetIcon from '../components/icons/PlanetIcon';
 const HomePage = () => {
   return (
     <div>
+      <div className="container scroll-text-wrapper">
+        <div className="scroll-text-container">
+          <div className="scroll-text">For advertising or cooperation, call +374 94 22 50 64</div>
+        </div>
+      </div>
       <section className="container hero">
         <img className="hero-img" src={require('../assets/images/hero.webp')} alt="" />
         <div className="hero-text">

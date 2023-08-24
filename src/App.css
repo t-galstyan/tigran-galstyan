@@ -861,3 +861,65 @@ h1.title {
     margin-bottom: 16px;
   }
 }
+
+.scroll-text-container {
+  width: 300px;
+  color: #fff;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 500px) {
+  .scroll-text-container {
+    width: 100%;
+  }
+}
+.scroll-text-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -10px;
+}
+
+.scroll-text {
+  white-space: nowrap;
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+
+  -moz-animation: my-animation 15s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 15s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from {
+    -moz-transform: translateX(110%);
+  }
+  to {
+    -moz-transform: translateX(-120%);
+  }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from {
+    -webkit-transform: translateX(110%);
+  }
+  to {
+    -webkit-transform: translateX(-120%);
+  }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(110%);
+    -webkit-transform: translateX(110%);
+    transform: translateX(110%);
+  }
+  to {
+    -moz-transform: translateX(-120%);
+    -webkit-transform: translateX(-120%);
+    transform: translateX(-120%);
+  }
+}
