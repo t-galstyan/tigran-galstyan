@@ -9,7 +9,7 @@ const HomePage = () => {
     <div>
       <div className="container scroll-text-wrapper">
         <div className="scroll-text-container">
-          <div className="scroll-text">For advertising or cooperation, call +374 94 22 50 64</div>
+          <div className="scroll-text">For advertising or cooperation, write us</div>
         </div>
       </div>
       <section className="container hero">
