@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import FbIcon from './icons/FbIcon';
-import InstaIcon from './icons/InstaIcon';
 import TelegramIcon from './icons/TelegramIcon';
 
 const Header = () => {
@@ -10,9 +9,14 @@ const Header = () => {
   return (
     <header className={`${isOpened ? 'collapse' : ''}`}>
       <div className="container">
-        <Link to="/" className="logo">
-          Tigran Galstyan
-        </Link>
+        <div className="header-logo-wrapper">
+          <Link to="/" className="logo">
+            Tigran Galstyan
+          </Link>
+          <a href="https://www.amazon.com/dp/B0CH8PX36B" target="_blank" rel="noreferrer" className="kindle">
+            <img src={require('../assets/images/kindle.png')} alt="Amazon kindle" width={60} height={45} />
+          </a>
+        </div>
         <div className="nav">
           <button onClick={() => setIsOpened(false)} className="close-button">
             <span></span>

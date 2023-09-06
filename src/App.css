@@ -134,6 +134,7 @@ header a {
   font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 header ul svg {
@@ -155,6 +156,8 @@ header .social-links {
   align-items: center;
   gap: 14px;
 }
+
+/* logo */
 header .logo {
   padding: 12px 48px;
   margin-left: -48px;
@@ -224,6 +227,59 @@ header .logo:hover {
   }
 }
 
+@media screen and (max-width: 420px) {
+  header .logo {
+    padding: 12px 32px;
+    margin-left: -32px;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  @-moz-keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 240px;
+    }
+    100% {
+      background-position: 240px;
+    }
+  }
+  @-webkit-keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 240px;
+    }
+    100% {
+      background-position: 240px;
+    }
+  }
+  @-o-keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 240px;
+    }
+    100% {
+      background-position: 240px;
+    }
+  }
+  @keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 240px;
+    }
+    100% {
+      background-position: 240px;
+    }
+  }
+}
+/* logo end */
 .hero {
   display: flex;
   gap: 48px;
@@ -921,5 +977,28 @@ h1.title {
     -moz-transform: translateX(-120%);
     -webkit-transform: translateX(-120%);
     transform: translateX(-120%);
+  }
+}
+
+.header-logo-wrapper {
+  display: flex;
+  align-items: center;
+  padding-right: 18px;
+}
+
+.header-logo-wrapper .kindle {
+  margin-left: -20px;
+  transition: 0.3s ease-in;
+}
+.header-logo-wrapper .kindle:hover {
+  transform: scale(1.2);
+}
+@media screen and (max-width: 380px) {
+  .header-logo-wrapper {
+    flex-wrap: wrap;
+    padding-right: 8px;
+  }
+  .header-logo-wrapper .kindle {
+    margin-left: 0;
   }
 }
